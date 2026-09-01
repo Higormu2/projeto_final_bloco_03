@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <section className="flex w-full flex-1 items-center justify-center bg-[#bfe5ec] px-4 py-8 text-slate-900">
@@ -11,13 +13,13 @@ function Home() {
             Aqui você encontra Medicamentos e Cosméticos!
           </p>
 
-          <button
-            type="button"
-            className=" mx-auto rounded-md bg-[#4a46a5] px-5 py-3 text-base font-semibold
-             text-white shadow-md transition hover:bg-[#3d3a8d] "
+          <Link
+            to="/cadastrarproduto"
+            className="mx-auto rounded-md bg-[#4a46a5] px-5 py-3 text-base font-semibold
+             text-white shadow-md transition hover:bg-[#3d3a8d]"
           >
             Cadastrar Produto
-          </button>
+          </Link>
         </div>
 
         <div className="flex justify-center md:justify-end">
